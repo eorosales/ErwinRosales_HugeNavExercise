@@ -1,0 +1,89 @@
+@import "fonts.css";
+
+body {
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font: 20vmin/1 HUGEAvantGardeBold;
+  letter-spacing: -0.06em;
+  text-align: center;
+}
+
+/* ====================
+Top Bar Styles
+=======================*/
+
+nav.nav-top-bar {
+  background-color: #ec008c;
+  width: 100%;
+  height: 72px;
+  line-height: 0;
+  position: relative;  
+
+  a#logo {
+	display: inline-block;
+	padding: 24px;
+    padding-right: 48px;
+
+    img {
+    	width: 60px;
+    	height: 24px;
+    	}
+	}
+
+  div.primary-nav {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+
+    a {
+    	font: 21px HUGEAvantGardeBold, sans-serif;
+    	color: #fff;
+    	padding: 0 24px;
+    	text-decoration: none;
+
+    	&:hover  {
+      		color: #ec008c;
+      		padding-top: 28px;
+      		padding-bottom: 24px;
+      		background-color: #fff;
+    		}
+    	}
+  	}
+}
+
+/* =========================
+Header / Feature Image Area
+===========================*/
+
+header {
+ 	width: 100%;
+
+	img {
+  		max-height: 640px;
+  		width: 100%;
+	}
+}
+
+main.intro {
+	outline: 1px dashed red;
+	max-width: 968px;
+	margin: 0 auto; 
+	margin-top: 24px;
+	
+	p {
+		font-family: 24px Galaxie;
+		line-height: 36px;
+		color: #000;
+	}
+}
+
+
