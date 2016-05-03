@@ -1,0 +1,665 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"response",
+				"responseObject"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"backgroun",
+				"background-attachment"
+			],
+			[
+				"font",
+				"font-face"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-attachment"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"backgr",
+				"background-attachment"
+			],
+			[
+				"bg",
+				"bgi	background-image: url(${0});"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"ba",
+				"background-origin"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"hover-t",
+				"hover-tile-height"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"ca",
+				"CaviarDreams"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"text-",
+				"text-indent"
+			],
+			[
+				"content",
+				"content"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"r",
+				"repeat-y"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"bak",
+				"background-position"
+			],
+			[
+				"backgro",
+				"background-repeat"
+			],
+			[
+				"im",
+				"img"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 729,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 644,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 4385,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/erwinrosales/Sites/NavExercise-master/public/_index.html",
+			"settings":
+			{
+				"buffer_size": 755,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/erwinrosales/Sites/NavExercise-master/public/data/data-test.html",
+		"/Users/erwinrosales/Sites/NavExercise-master/public/index.html",
+		"/Users/erwinrosales/Sites/NavExercise-master/public/test-page.html",
+		"/Users/erwinrosales/Sites/NavExercise-master/app.js",
+		"/Users/erwinrosales/Sites/NavExercise-master/package.json",
+		"/Users/erwinrosales/Sites/NavExercise-master/README.md",
+		"/Users/erwinrosales/Documents/NavExercise-master/README.md",
+		"/Users/erwinrosales/Sites/jekyll-blog/_config.yml",
+		"/Users/erwinrosales/Sites/jekyll-blog/_layouts/photos.html",
+		"/Users/erwinrosales/Sites/jekyll-blog/css/custom.css",
+		"/Users/erwinrosales/Sites/jekyll-blog/_includes/nav.html",
+		"/Users/erwinrosales/Sites/jekyll-blog/_posts/nab/2016-04-20-Last-Day-at-NAB-Las-Vegas.md",
+		"/Users/erwinrosales/Sites/jekyll-blog/_posts/photos/2016-04-25-Open-Mic-at-Red-Rock-Cafe.html",
+		"/Users/erwinrosales/Sites/jekyll-blog/_posts/2016-04-20-Last-Day-at-NAB-Las-Vegas.html",
+		"/Users/erwinrosales/Sites/jekyll-blog/photos.html",
+		"/Users/erwinrosales/Sites/jekyll-blog/news.html",
+		"/Users/erwinrosales/Sites/jekyll-blog/index.html",
+		"/Users/erwinrosales/Sites/jekyll-blog/css/common.css",
+		"/Users/erwinrosales/Sites/photoblog/index.html",
+		"/Users/erwinrosales/Sites/photoblog/css/app.scss",
+		"/Users/erwinrosales/Sites/photoblog/css/1-custom/custom-dir.scss",
+		"/Users/erwinrosales/Sites/photoblog/img/logo.svg",
+		"/Users/erwinrosales/Sites/photoblog/css/1-custom/_header.scss",
+		"/Users/erwinrosales/Sites/photoblog/css/1-custom/main-dir.scss",
+		"/Users/erwinrosales/Downloads/animal-trading-cards/card.html",
+		"/Users/erwinrosales/bash_profile",
+		"/Users/erwinrosales/Downloads/animal-trading-cards/styles.css",
+		"/Users/erwinrosales/version-control/recipes/chili-recipe.txt",
+		"/Users/erwinrosales/Downloads/writing-selectors/index.html",
+		"/Users/erwinrosales/version-control/recipes/baked-salmon.txt",
+		"/Users/erwinrosales/version-control/reflections/lesson_2_reflections.txt",
+		"/Users/erwinrosales/version-control/reflections/lesson_1_reflections.txt",
+		"/Users/erwinrosales/version-control/reflections/lesson_3_reflections.txt",
+		"/Users/erwinrosales/recipes/lesson_2_reflections.txt",
+		"/Users/erwinrosales/version control/asteroids/game.js",
+		"/Users/erwinrosales/version control/asteroids/index.html",
+		"/Users/erwinrosales/.bash_profile",
+		"/Users/erwinrosales/Downloads/mockup-to-article(1)/index.html",
+		"/Users/erwinrosales/Downloads/figures/index.html",
+		"/Users/erwinrosales/Downloads/index.html",
+		"/Users/erwinrosales/Sites/portfolio/2-portfolio/index.html",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/css/1-main/_header.scss",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/css/1-main/_layout.scss",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/config.sublime-workspace",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/index.html",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/css/0-plugins/neat/settings/_visual-grid.scss",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/css/1-main/main-dir.scss",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/css/app.scss",
+		"/Users/erwinrosales/Sites/udacity/p1-portfolio/main.css",
+		"/Users/erwinrosales/Sites/udacity/lettertoself.txt",
+		"/Users/erwinrosales/Sites/udacity/goals.txt",
+		"/Users/erwinrosales/Sites/photoblog/_config.yml",
+		"/Users/erwinrosales/Sites/photoblog/about.md",
+		"/Users/erwinrosales/Sites/photoblog/feed.xml",
+		"/Users/erwinrosales/Sites/photoblog/_posts/2016-02-19-welcome-to-jekyll.markdown",
+		"/Users/erwinrosales/Sites/photoblog/_sass/_layout.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_landing.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_gallery.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_footer.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_vars.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_about.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_roasters.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_fonts.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/custom-dir.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_type.scss",
+		"/Users/erwinrosales/Sites/redberry/index.html",
+		"/Users/erwinrosales/Sites/portfolio/index.html",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/_highlights.scss",
+		"/Users/erwinrosales/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/erwinrosales/Sites/portfolio/css/1-modules/_work.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_roasters.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_vars.scss",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/index.html",
+		"/Users/erwinrosales/Sites/1-redberrycoffeebar/index.html",
+		"/Users/erwinrosales/Sites/red-berry/css/1-custom/landing.scss",
+		"/Users/erwinrosales/Sites/red-berry/css/app.scss",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/1-main/_vars.scss",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/1-main/main-dir.scss",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/1-main/_header.scss",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/app.scss",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/1-main/_main-dir.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_roasters-nohover.scss",
+		"/Users/erwinrosales/Sites/redberry/css/app.css",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/custom-dir.scss",
+		"/Users/erwinrosales/Sites/portfolio-web-dev/index.html",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_roasters_nolcick.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_footer.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_method.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_gallery.scss",
+		"/Users/erwinrosales/Sites/redberry/css/1-modules/modules-dir.scss",
+		"/Users/erwinrosales/Sites/redberry/css/1-modules/_modal.scss",
+		"/Users/erwinrosales/Sites/redberry/js/modal.js",
+		"/Users/erwinrosales/Sites/redberry/css/app.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_header.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_sections.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_mobile.scss",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_hover.scss",
+		"/Users/erwinrosales/Sites/redberry/js/custom-js.js",
+		"/Users/erwinrosales/Sites/redberry/css/2-custom/_map.scss",
+		"/Users/erwinrosales/Sites/redberry/js/_fade-in.js",
+		"/Users/erwinrosales/Sites/_redberrycoffeebar/css/1-main/_header.scss",
+		"/Users/erwinrosales/Sites/_redberrycoffeebar/css/1-main/_intro.scss",
+		"/Users/erwinrosales/Sites/redberry/css/1-modules/_hover-tile.scss",
+		"/Users/erwinrosales/Sites/redberry/css/1-modules/_hero-unit.scss",
+		"/Users/erwinrosales/Sites/redberry/css/1-modules/_cards.scss",
+		"/Users/erwinrosales/Sites/redberry/css/1-custom/custom-dir.scss",
+		"/Users/erwinrosales/Sites/untitled folder/bower.json",
+		"/Users/erwinrosales/Sites/untitled folder/README.md",
+		"/Users/erwinrosales/Sites/untitled folder/index.html",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/0-sections/_header.scss",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/app.css",
+		"/Users/erwinrosales/Sites/red-berry-coffee-bar/css/0-sections/sections-dir.scss",
+		"/Users/erwinrosales/Sites/redberrycoffeebar/index.html",
+		"/Users/erwinrosales/Sites/jekyll-test/_posts/2015-11-10-welcome-to-jekyll.markdown",
+		"/Users/erwinrosales/Sites/jekyll-test/_posts/2015-11-10-my-first-post.md",
+		"/Users/erwinrosales/Sites/jekyll-test/_includes/header.html",
+		"/Users/erwinrosales/Sites/jekyll-test/_config.yml",
+		"/Users/erwinrosales/Sites/jekyll-test/feed.xml",
+		"/Users/erwinrosales/Sites/jekyll-test/about.md",
+		"/Users/erwinrosales/Sites/jekyll-test/index.html",
+		"/Users/erwinrosales/Sites/jekyll-test/_layouts/default.html",
+		"/Users/erwinrosales/Desktop/kittenbook/kittenbook.js",
+		"/Users/erwinrosales/Desktop/kittenbook/values.json",
+		"/Users/erwinrosales/Sites/portfolio/css/1-layout/layout-dir.scss",
+		"/Users/erwinrosales/Sites/portfolio/css/1-layout/_contact.scss",
+		"/Users/erwinrosales/Sites/portfolio/css/1-layout/_work.scss",
+		"/Users/erwinrosales/Sites/portfolio/css/1-layout/_about.scss",
+		"/Users/erwinrosales/Sites/portfolio/css/1-layout/_base.scss"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"delayBeforeBullet",
+			"delayBeforeBullt",
+			".uk-height-viewport",
+			".uk-height",
+			"box-sizing",
+			".fadeInLeft",
+			".fade",
+			"top-bar",
+			"side-nav",
+			"transform: translateY(-50%);",
+			"small-block-grid-1 medium-block-grid-2 large-block-grid-3",
+			"row",
+			"link",
+			"small",
+			"button",
+			"button-group",
+			"button",
+			"hr",
+			"topbar",
+			"body",
+			"hr",
+			"top-bar",
+			"h1",
+			"top-bar",
+			"6",
+			"contain-to-grid",
+			"topbar",
+			"wrapper",
+			"topbar",
+			"contain-to-grid",
+			"topbar",
+			"contain-to-grid",
+			"topbar",
+			"wrapper",
+			"topbar",
+			"contain-to-grid",
+			"topbar",
+			"panel",
+			"topbar",
+			"panel",
+			"background",
+			"bg-img",
+			"img",
+			"panel",
+			"topbar-link-color",
+			"h1",
+			"topbar",
+			"header",
+			".header",
+			"a",
+			"topbar",
+			"body",
+			"topbar",
+			".topbar",
+			"$img",
+			"$image",
+			"$img",
+			"$button",
+			".button",
+			"$topbar",
+			"$otopbar",
+			"$opbar",
+			".large-block-grid-3",
+			".small-block-grid-3",
+			".small-grid-3",
+			".small-grid",
+			".row",
+			".button",
+			"$button",
+			".accordion",
+			"single-item",
+			".single-item",
+			".middle",
+			".center",
+			".top-bar",
+			".to-bar",
+			"a		",
+			"a",
+			".row",
+			".top-bar",
+			".row",
+			"img",
+			".img",
+			".right",
+			".top-bar-section",
+			"h1",
+			".top-bar",
+			".row",
+			"row",
+			"top-bar",
+			"p",
+			">\n",
+			"top-bar",
+			"button		",
+			"header ",
+			"h1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/index.html",
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								729,
+								729
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 4385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/erwinrosales/Sites/NavExercise-master/public/_index.html",
+					"settings":
+					{
+						"buffer_size": 755,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								755
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"css/1-layout/layout-dir.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/erwinrosales/Sites/art106/art106.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true
+}

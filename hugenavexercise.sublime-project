@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "api"
+		},
+		{
+			"path": "bin"
+		},
+		{
+			"path": "data"
+		},
+		{
+			"path": "public"
+		},
+		{
+			"path": "resources"
+		}
+	]
+}
