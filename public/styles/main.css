@@ -57,7 +57,7 @@ h1 {
               margin-top: 23px;
               padding-bottom: 12px;
               background-color: #fff;
-              display: none;}
+              display: block;}
               nav.nav-top-bar div.primary-nav div.top-nav-item div.dropdown-content>a {
                 font: 16px Galaxie, sans-serif;
                 display: block;

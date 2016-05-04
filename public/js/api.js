@@ -1,8 +1,12 @@
+// name functions with verbs
+// clean github repository
+// break up with scss
+
 // Create div container element for sub nav 
 function createSubNav(subItems) {
-	var subDiv = document.createElement('div');
-	subDiv.setAttribute('class', 'dropdown-content');
+	var subDiv = document.createElement('div');	
 
+	subDiv.setAttribute('class', 'dropdown-content');
 	for(var i = 0; i < subItems.length; i++) {
 		var subLabel = subItems[i].label;
 		var subUrl = subItems[i].url;
@@ -14,7 +18,8 @@ function createSubNav(subItems) {
 		subLink.setAttribute('href', subUrl);
 		subDiv.appendChild(subLink);
 	}
-	console.log(subDiv);	
+
+	return subDiv;	
 }
 
 // Set links for top-nav-items
@@ -31,37 +36,40 @@ var setLink = function(label, url) {
 function setTopMenu(label, url) {
 	var topNavLoc = document.getElementById('main-nav');	
 	var topNavDiv = document.createElement('div');	
+	var topNavDivText = document.createTextNode('');
 	var a = setLink(label, url);
 
+	topNavDiv.appendChild(topNavDivText);
 	topNavLoc.appendChild(topNavDiv);
 	topNavDiv.setAttribute("class", "top-nav-item");
 	topNavDiv.appendChild(a);
+
+	return topNavDiv;
+
 };
 
-// Access labels and urls
-function navJson(json) {
-	var itemsLength = json.length;
-
+// Check labels, urls and sub items
+function navJson(items) {
+	var itemsLength = items.length;
 	for(var i = 0; i < itemsLength; i++) {
-		var itemsLabels = json[i].label;
-		var itemsUrls = json[i].url;
-		var subItems = json[i].items;
-
-		setTopMenu(itemsLabels, itemsUrls);
+		var itemsLabels = items[i].label;
+		var itemsUrls = items[i].url;
+		var subItems = items[i].items;
+		var topNavDiv = setTopMenu(itemsLabels, itemsUrls);
 
 		if(typeof(subItems) !== 'undefined') {
 			if(subItems.length > 0) {
-				createSubNav(subItems);
-			}
-		}
+				var subDiv = createSubNav(subItems);
+				topNavDiv.appendChild(subDiv);
 
+			}
+		}	
 	}
 };
 
 // Execute Ajax XMLHttpRequest
 function xhrRequest() {
 	var xhr = new XMLHttpRequest();
-
 	xhr.onreadystatechange = function() {
 		if(xhr.readyState == 4 && xhr.status == 200) {
 			var response = xhr.responseText;
@@ -69,10 +77,8 @@ function xhrRequest() {
 			navJson(nav.items);
 		}
 	}	
-
 	xhr.open("GET", '/api/nav.json', true);
 	xhr.send();
-
 };
 
 xhrRequest();
