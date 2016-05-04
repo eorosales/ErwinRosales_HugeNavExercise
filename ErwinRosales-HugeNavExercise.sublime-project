@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"path": "api"
+		},
+		{
+			"path": "bin"
+		},
+		{
+			"path": "data"
+		},
+		{
+			"path": "node_modules"
+		},
+		{
+			"path": "public"
+		},
+		{
+			"path": "resources"
+		},
+		{
+			"path": "dev"
+		}
+	]
+}
