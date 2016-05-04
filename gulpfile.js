@@ -11,7 +11,7 @@ gulp.task('sass', function() {
 
 // JS concat task
 gulp.task('scripts', function() {
-  return gulp.src(['dev/js/ajaxRequest.js', 'dev/js/createTopNav.js', 'itemConstructor'])
+  return gulp.src(['dev/js/ajaxRequest.js', 'dev/js/createTopNav.js', 'dev/js/createSubNav.js'])
     .pipe(concat('api.js'))
     .pipe(gulp.dest('public/js'));
 });

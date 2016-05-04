@@ -6,7 +6,7 @@ function xhrRequest() {
 		if(xhr.readyState == 4 && xhr.status == 200) {
 			var response = xhr.responseText;
 			var nav = JSON.parse(response);
-			createNavItems(nav.items);
+			createTopNav(nav.items);
 		}
 	}	
 

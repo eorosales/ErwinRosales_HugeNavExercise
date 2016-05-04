@@ -13,37 +13,72 @@ h1 {
   letter-spacing: -0.06em;
   text-align: center; }
 
-/* ====================
-Top Bar Styles
-=======================*/
-nav.nav-top-bar {
-  background-color: #ec008c;
-  width: 100%;
-  height: 72px;
-  line-height: 0;
-  position: relative; }
-  nav.nav-top-bar a#logo {
-    display: inline-block;
-    padding: 24px;
-    padding-right: 48px; }
-    nav.nav-top-bar a#logo img {
-      width: 60px;
-      height: 24px; }
-  nav.nav-top-bar div.primary-nav {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    margin-top: -8px; }
-    nav.nav-top-bar div.primary-nav a {
-      font: 21px HUGEAvantGardeBold, sans-serif;
-      color: #fff;
-      padding: 0 24px;
-      text-decoration: none; }
-      nav.nav-top-bar div.primary-nav a:hover {
-        color: #ec008c;
-        padding-top: 28px;
-        padding-bottom: 24px;
-        background-color: #fff; }
+/* ============================
+>768px Top Bar Styles - Desktop
+==============================*/
+@media (min-width: 769px) {
+
+  nav.nav-top-bar {
+    background-color: #ec008c;
+    width: 100%;
+    height: 72px;
+    line-height: 0;
+    position: relative; }
+    nav.nav-top-bar a#logo {
+      display: inline-block;
+      padding: 24px;
+      padding-right: 48px; }
+      nav.nav-top-bar a#logo img {
+        width: 60px;
+        height: 24px; }
+    nav.nav-top-bar div.primary-nav {
+      display: inline-block;
+      position: absolute;
+      font-size: 0;
+      top: 50%;
+      margin-top: -8px; }
+        nav.nav-top-bar div.primary-nav>div.top-nav-item {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;}
+        nav.nav-top-bar div.primary-nav div.top-nav-item>a {
+          font: 21px HUGEAvantGardeBold, sans-serif;
+          color: #fff;
+          padding: 0 24px;
+          text-decoration: none;
+          width: auto;}
+          nav.nav-top-bar div.primary-nav div.top-nav-item>a:hover {          
+            color: #ec008c;
+            padding-top: 28px;
+            padding-bottom: 24px;
+            background-color: #fff;}
+            nav.nav-top-bar div.primary-nav div.top-nav-item div.dropdown-content {
+              position: absolute;          
+              margin-top: 23px;
+              padding-bottom: 12px;
+              background-color: #fff;
+              display: none;}
+              nav.nav-top-bar div.primary-nav div.top-nav-item div.dropdown-content>a {
+                font: 16px Galaxie, sans-serif;
+                display: block;
+                line-height: 48px;
+                background-color: #fff;
+                padding: 0px 24px;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;}
+              nav.nav-top-bar div.primary-nav div.top-nav-item div.dropdown-content>a:hover {
+                color: #ec008c;            
+                background-color: #eee;}
+              }
+
+/* =============================
+>= 768px Top Bar Styles - Mobile
+===============================*/
+
+@media (max-width: 768px) {
+ 
+}
 
 /* =========================
 Header / Feature Image Area
