@@ -1,11 +1,6 @@
-// name functions with verbs
-// clean github repository
-// break up with scss
-
-// Create div container element for sub nav 
+// Create div container element for sub nav
 function createSubNav(subItems) {
 	var subDiv = document.createElement('div');	
-
 	subDiv.setAttribute('class', 'dropdown-content');
 	for(var i = 0; i < subItems.length; i++) {
 		var subLabel = subItems[i].label;
@@ -16,6 +11,7 @@ function createSubNav(subItems) {
 
 		subLink.appendChild(subText);
 		subLink.setAttribute('href', subUrl);
+
 		subDiv.appendChild(subLink);
 	}
 
@@ -33,7 +29,7 @@ var setLink = function(label, url) {
 };
 
 // Create elements for top-nav-items
-function setTopMenu(label, url) {
+var setTopMenu = function (label, url) {
 	var topNavLoc = document.getElementById('main-nav');	
 	var topNavDiv = document.createElement('div');	
 	var topNavDivText = document.createTextNode('');
@@ -41,11 +37,10 @@ function setTopMenu(label, url) {
 
 	topNavDiv.appendChild(topNavDivText);
 	topNavLoc.appendChild(topNavDiv);
-	topNavDiv.setAttribute("class", "top-nav-item");
+	topNavDiv.setAttribute('class', 'top-nav-item');
 	topNavDiv.appendChild(a);
 
 	return topNavDiv;
-
 };
 
 // Check labels, urls and sub items
@@ -61,10 +56,13 @@ function navJson(items) {
 			if(subItems.length > 0) {
 				var subDiv = createSubNav(subItems);
 				topNavDiv.appendChild(subDiv);
+				var toggleTopNav = function() {
+					console.log(topNavDiv);
+				}();
 
 			}
-		}	
-	}
+		}
+	}	
 };
 
 // Execute Ajax XMLHttpRequest
@@ -82,3 +80,11 @@ function xhrRequest() {
 };
 
 xhrRequest();
+
+
+
+
+
+
+
+

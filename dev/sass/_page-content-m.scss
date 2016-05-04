@@ -1,0 +1,59 @@
+// Mobile
+body {
+  background-color: #fff;
+  height: 100%;
+}
+
+.wrapper {
+	height: 100%;
+
+	header {
+	 	width: 100%;
+
+		img {
+	  		min-width: 100%;
+	  		max-height: 240px;
+	  		display: block;
+		}
+
+		h1 {
+			font: 44px HUGEAvantGardeBold;
+		    line-height: 48px;
+		    letter-spacing: -0.02em;
+		    text-align: center;
+		    color: #ccc;
+		    position: relative;
+		    top: 98px;
+		    display: block;
+		    margin: 0px 24px;
+		    outline: 1px dashed red;
+		    
+		    strong {
+		      display: block;
+		    }
+		}
+	}
+
+	main.intro {
+		padding: 0px 24px;
+		display: block;
+		width: 100%;
+		
+		p {
+			font-family: 14px Galaxie, sans-serif;
+			line-height: 24px;
+			color: #000;
+		}
+	}
+
+	.overlay {
+		background-color: $mask;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		display: none ;
+	}
+}

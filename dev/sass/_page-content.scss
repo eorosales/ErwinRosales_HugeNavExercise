@@ -1,0 +1,60 @@
+// Desktop 
+body {
+  color: #fff;
+
+  h1 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font: 120px HUGEAvantGardeBold;
+    line-height: 132px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+    strong {
+      display: block;
+    }
+  }
+}
+
+.wrapper {
+	height: 100%;
+
+	header {
+	 	width: 100%;
+
+		img {
+	  		max-height: 640px;
+	  		width: 100%;
+		}
+	}
+
+	main.intro {
+		font: 24px Galaxie, sans-serif;
+		line-height: 36px;
+		max-width: 968px;
+		margin: 0 auto; 
+		margin-top: 24px;
+		
+		p {
+			font-family: 24px Galaxie;
+			line-height: 36px;
+			color: #000;
+		}
+	}
+
+	.overlay {
+		background-color: $mask;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding-bottom: 100%;
+		z-index: 1;
+		display: none;
+	}
+}
