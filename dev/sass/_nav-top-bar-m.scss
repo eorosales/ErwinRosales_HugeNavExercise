@@ -8,21 +8,32 @@ nav.nav-top-bar {
   
   a#logo {
     display: block;
+    position: absolute;
     width: 24px;
-    height: 20px;
-    background-image: url(/images/toggle-open.svg);
-    padding: 20px 24px;
+    height: 20px; 
+    margin: 20px 24px;
  
-    img {
+    .visible-desktop {
       display: none;
+    }
+  
+    .visible-mobile {
+      width: 24px;
+      height: 20px;
     }
   }
 
   .primary-nav {
+    display: none; // control visibility for dev purposes
+  }
+
+  .primary-nav-show {
+    display: block;
     position: absolute;
     padding-top: 12px;
     background: #fff;
-    display: none; // control visibility for dev purposes
+    margin-top: 60px;
+  
   
     .top-nav-item {
       position: relative;
@@ -42,7 +53,8 @@ nav.nav-top-bar {
         }
       }
     }
-  } 
+  }
+   
 
   .dropdown-content {
     position: relative;          

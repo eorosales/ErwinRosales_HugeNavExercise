@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/styles/normalize.css">
   <link rel="stylesheet" href="/styles/main.css">
-  <script src="/js/api.js"></script>
+  <script src="/js/main.js"></script>
 
 </head>
 <body>
 
 	<nav class="nav-top-bar">
 		<a id="logo" href="/">
-			<img src="/images/HUGE-white.png" alt="Huge">
+			<img class="visible-desktop" src="/images/HUGE-white.png" alt="Huge">
+			<img class="visible-mobile" src="/images/toggle-open.svg" alt="Hamburger">
 		</a>
 	
-		<!-- == Top Bar Nav === -->
 		<div id="main-nav" class="primary-nav">
 		</div>
 	</nav>
@@ -23,11 +23,13 @@
 	<div class="wrapper">
 		<header>
 			<img src="/images/background-image.jpg">
-			<h1>Get paid for<strong>giving a shit.</strong></h1>
+			<div class="headline">
+				<h1>Get paid for<strong>giving a shit.</strong></h1>
+			</div>
 		</header>
 
 		<main class="intro">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iure, recusandae neque, pariatur ipsum, cupiditate quis dolor molestias dolorem deserunt aspernatur. Enim sint, veritatis quidem quo ducimus veniam cumque quas?</p>
+			<p>Lorem ipsum dolor sit emet, consectetur adipisicing elit. Voluptates iure, recusandae neque, pariatur ipsum, cupiditate quis dolor molestias dolorem deserunt aspernatur. Enim sint, veritatis quidem quo ducimus veniam cumque quas?</p>
 		</main>
 		<div class="overlay"></div>
 	</div>

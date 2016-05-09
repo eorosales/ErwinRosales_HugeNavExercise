@@ -9,10 +9,12 @@ function createSubNav(subItems) {
 		var subLink = document.createElement('a')
 		var subText = document.createTextNode(subLabel);
 
+		var toggleSubNav = document.querySelector('.top-nav-item')
+
 		subLink.appendChild(subText);
 		subLink.setAttribute('href', subUrl);
 
-		subDiv.appendChild(subLink);
+		subDiv.appendChild(subLink);	
 	}
 
 	return subDiv;	
@@ -56,13 +58,10 @@ function navJson(items) {
 			if(subItems.length > 0) {
 				var subDiv = createSubNav(subItems);
 				topNavDiv.appendChild(subDiv);
-				var toggleTopNav = function() {
-					console.log(topNavDiv);
-				}();
-
 			}
 		}
-	}	
+		pushNav();
+	}
 };
 
 // Execute Ajax XMLHttpRequest
@@ -80,11 +79,3 @@ function xhrRequest() {
 };
 
 xhrRequest();
-
-
-
-
-
-
-
-

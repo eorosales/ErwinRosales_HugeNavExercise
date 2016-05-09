@@ -11,9 +11,13 @@ nav.nav-top-bar {
     padding: 24px;
     padding-right: 48px; 
  
-    img {
+    .visible-desktop {
       width: 60px;
       height: 24px; 
+    }
+
+    .visible-mobile {
+      display: none;
     }
   }
 
@@ -28,7 +32,7 @@ nav.nav-top-bar {
       display: inline-block;
       position: relative;
       vertical-align: top;
-    
+
       &>a {
         font: 21px HUGEAvantGardeBold, sans-serif;
         color: #fff;
@@ -46,12 +50,21 @@ nav.nav-top-bar {
     }
   } 
 
+.hide {
+  top: -9999px;
+  left: -9999px;
+}
+
+.show {
+  display: block;
+}
+
   .dropdown-content {
-    position: absolute;          
+    position: absolute;
     margin-top: 23px;
     padding-bottom: 12px;
     background-color: #fff;
-    display: none; // controls visibility
+    display: block;
 
     &>a {
       font: 16px Galaxie, sans-serif;
