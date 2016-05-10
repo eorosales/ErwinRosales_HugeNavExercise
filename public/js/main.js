@@ -11,13 +11,19 @@ function setSubNav(itemsDiv, subItemsLength, subItems) {
 				subLink.appendChild(subText);
 				subLink.setAttribute('href', subUrl);
 				subDiv.appendChild(subLink);
-		
-				itemsDiv.appendChild(subDiv);
 				subDiv.setAttribute('class', 'dropdown-content hide');
-				itemsDiv.addEventListener('click', function() {
-				subDiv.style.display = 'block';
-				});
+				itemsDiv.appendChild(subDiv);	
 			}	
+			// Toggle subDiv visibility
+			itemsDiv.addEventListener('click', function() {		
+				if(itemsDiv.firstChild.nextSibling.classList.contains('hide')) {
+					subDiv.removeAttribute('class');
+					subDiv.setAttribute('class', 'dropdown-content show');
+				}else{
+					subDiv.removeAttribute('class');
+					subDiv.setAttribute('class', 'dropdown-content hide');
+				}
+			});
 			return subDiv;
 		}
 	}
