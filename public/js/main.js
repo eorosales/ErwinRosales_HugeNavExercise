@@ -1,18 +1,22 @@
 // Construct div elements to hold sub items
-function setSubNav(subItemsLength, subItems) {
+function setSubNav(itemsDiv, subItemsLength, subItems) {
 	if(typeof(subItems) !== 'undefined') {
 		if(subItemsLength > 0) {
 			var subDiv = document.createElement('div');	
-			subDiv.setAttribute('class', 'dropdown-content');
 			for(var i = 0; i < subItems.length; i++) {
 				var subLabel = subItems[i].label;
 				var subUrl = subItems[i].url;
 				var subLink = document.createElement('a')
 				var subText = document.createTextNode(subLabel);
-
 				subLink.appendChild(subText);
 				subLink.setAttribute('href', subUrl);
 				subDiv.appendChild(subLink);
+		
+				itemsDiv.appendChild(subDiv);
+				subDiv.setAttribute('class', 'dropdown-content hide');
+				itemsDiv.addEventListener('click', function() {
+				subDiv.style.display = 'block';
+				});
 			}	
 			return subDiv;
 		}
@@ -39,6 +43,7 @@ function setItems(items) {
 	var subClick = items.items;
 	var mainNavContainer = document.getElementById('main-nav');
 
+
 	for(var i = 0; i < itemsLength; i++) {
 
 		var itemsLabel = items[i].label;
@@ -47,35 +52,14 @@ function setItems(items) {
 
 		var subItems = items[i].items;
 		var subItemsLength = items[i].items.length;
-		var subDiv = setSubNav(subItemsLength, subItems);
+		var subDiv = setSubNav(itemsDiv, subItemsLength, subItems);
 
 		mainNavContainer.appendChild(itemsDiv);
-		if(typeof(subItems) !== 'undefined') {
-			if(subItemsLength > 0) {
-				itemsDiv.appendChild(subDiv);
-				itemsDiv.setAttribute('onclick', '');
-				itemsDiv.onclick = function(subDiv) {					
-					var toggleTarget = this.firstChild.nextSibling;	
-					toggleTarget.classList.add('hide');
-					if(toggleTarget.classList != 'show') {
-							if(toggleTarget.classList == 'hide') {
-								toggleTarget.classList.remove('hide', 'dropdown-content');
-								toggleTarget.classList.add('show', 'dropdown-content');
-								console.log(toggleTarget.classList);
-							}
-					}else {
-
-					if(toggleTarget.classList !== 'hide') {
-							if(toggleTarget.classList = 'show') {
-								toggleTarget.classList.remove('show', 'dropdown-content');
-								toggleTarget.classList.add('hide', 'dropdown-content');
-								console.log(toggleTarget.classList);
-							}
-						}	
-					}
-				}
-			}
-		}	
+		// if(typeof(subItems) !== 'undefined') {
+		// 	if(subItemsLength > 0) {
+				
+		// 	}
+		// }	
 	}
 	return itemsDiv;
 }

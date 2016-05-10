@@ -27,6 +27,7 @@ nav.nav-top-bar {
     font-size: 0;
     top: 50%;
     margin-top: -8px; 
+    white-space: nowrap;
   
     .top-nav-item {
       display: inline-block;
@@ -51,12 +52,12 @@ nav.nav-top-bar {
   } 
 
 .hide {
-  top: -9999px;
-  left: -9999px;
+  display: none;
 }
 
 .show {
   display: block;
+  z-index: 9999;
 }
 
   .dropdown-content {
@@ -64,7 +65,7 @@ nav.nav-top-bar {
     margin-top: 23px;
     padding-bottom: 12px;
     background-color: #fff;
-    display: block;
+
 
     &>a {
       font: 16px Galaxie, sans-serif;

@@ -38,7 +38,8 @@ body {
       position: absolute;
       font-size: 0;
       top: 50%;
-      margin-top: -8px; }
+      margin-top: -8px;
+      white-space: nowrap; }
       nav.nav-top-bar .primary-nav .top-nav-item {
         display: inline-block;
         position: relative;
@@ -55,16 +56,15 @@ body {
             padding-bottom: 24px;
             background-color: #fff; }
     nav.nav-top-bar .hide {
-      top: -9999px;
-      left: -9999px; }
+      display: none; }
     nav.nav-top-bar .show {
-      display: block; }
+      display: block;
+      z-index: 9999; }
     nav.nav-top-bar .dropdown-content {
       position: absolute;
       margin-top: 23px;
       padding-bottom: 12px;
-      background-color: #fff;
-      display: block; }
+      background-color: #fff; }
       nav.nav-top-bar .dropdown-content > a {
         font: 16px Galaxie, sans-serif;
         display: block;
