@@ -2,11 +2,9 @@ nav.nav-top-bar {
   background-color: #ec008c;
   width: 100%;
   height: 60px;
-  line-height: 0;
-  position: relative; 
   z-index: 9999;
   
-  a#logo {
+  &>a#logo {
     display: block;
     position: absolute;
     width: 24px;
@@ -24,10 +22,6 @@ nav.nav-top-bar {
   }
 
   .primary-nav {
-    display: none; // control visibility for dev purposes
-  }
-
-  .primary-nav-show {
     display: block;
     position: absolute;
     padding-top: 12px;
@@ -54,14 +48,25 @@ nav.nav-top-bar {
       }
     }
   }
+
+.hide {
+  top: -9999px;
+  left: - 9999px;
+  max-height: 0;
+}
+
+.show {
+  display: block;
+  height: auto;
+}
    
 
   .dropdown-content {
     position: relative;          
-    margin-top: 23px;
-    padding-bottom: 12px;
+    // margin-top: 23px;
+    // padding-bottom: 12px;
     background-color: #fff;
-    display: none; // controls visibility
+    line-height: 0;
 
     &>a {
       font: 16px Galaxie, sans-serif;
