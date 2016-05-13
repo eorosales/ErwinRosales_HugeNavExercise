@@ -41,7 +41,7 @@ nav.nav-top-bar {
         text-decoration: none;
         width: auto;
 
-        &:hover {          
+        &:hover, &:focus{          
           color: #ec008c;
           padding-top: 28px;
           padding-bottom: 24px;
