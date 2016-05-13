@@ -1,0 +1,21 @@
+$slide-duration: 0.3s;
+
+.primary-nav-push-right {
+	transform: translateX(0);
+	transition: $slide-duration;
+}
+
+.primary-nav-pull-left {
+	transform: translateX(-100%);
+	transition: $slide-duration;
+}
+
+.wrapper-pull-left {
+	transform: translateX(0);
+	transition: $slide-duration;
+}
+
+.wrapper-push-right {
+	transform: translateX(75%);
+	transition: $slide-duration;	
+}

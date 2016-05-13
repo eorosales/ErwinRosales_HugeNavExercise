@@ -84,4 +84,9 @@ nav.nav-top-bar {
       }
     }
   }
+  span {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 }

@@ -1,4 +1,63 @@
-// Construct div elements to hold sub items
+function setHamburgerInteraction() {
+// Add click interaction to 'hamburger'
+	var hamburger = document.getElementById('logo');
+	hamburger.setAttribute('class', 'toggle-nav-button');
+	var toggleNavButton = document.querySelector('.toggle-nav-button');
+	var mainNav = document.getElementById('main-nav');
+
+	// Toggle subDiv visibility in mobile
+	toggleNavButton.addEventListener('click', function() {
+		toggleNavButton.setAttribute('href', 'javascript:void(0)');		
+		var pageContent = document.querySelector('.wrapper');
+
+		// Push primary navigation right
+		if(mainNav.classList != 'primary-nav primary-nav-push-right') {
+			mainNav.removeAttribute('class');
+			mainNav.setAttribute('class','primary-nav primary-nav-push-right');
+		}else{
+		// Pull primary navigation left
+			mainNav.removeAttribute('class');
+			mainNav.setAttribute('class', 'primary-nav primary-nav-pull-left');
+		}
+
+		// Push page content to right 
+		if(pageContent.classList != 'wrapper wrapper-push-right') {
+			pageContent.removeAttribute('class');
+			pageContent.setAttribute('class', 'wrapper wrapper-push-right');
+		}else{
+		// Pull page content to left	
+			pageContent.removeAttribute('class');
+			pageContent.setAttribute('class', 'wrapper wrapper-pull-left');
+		}
+	});
+}
+
+// Toggle push and pull for subDiv
+function toggleDropdownContent (itemsDiv, subDiv) {
+	itemsDiv.addEventListener('click', function() {		
+		if(itemsDiv.firstChild.nextSibling.classList.contains('hide')) {
+			subDiv.removeAttribute('class');
+			subDiv.setAttribute('class', 'dropdown-content show');
+		}else{
+			subDiv.removeAttribute('class');
+			subDiv.setAttribute('class', 'dropdown-content hide');
+		}
+	});
+}
+
+// Insert arrow for items with mobile dropown content
+function appendArrow(itemsDiv, subDiv) {
+	var span = document.createElement('span');
+	var img = document.createElement('img');
+	var arrow = subDiv.parentNode;
+	img.setAttribute('src', '/images/arrow.png');
+	span.appendChild(img);
+	
+	arrow.firstChild.appendChild(span);
+	return arrow;
+}
+
+// Construct div container to hold secondary items
 function setSubNav(itemsDiv, subItemsLength, subItems) {
 	if(typeof(subItems) !== 'undefined') {
 		if(subItemsLength > 0) {
@@ -12,18 +71,12 @@ function setSubNav(itemsDiv, subItemsLength, subItems) {
 				subLink.setAttribute('href', subUrl);
 				subDiv.appendChild(subLink);
 				subDiv.setAttribute('class', 'dropdown-content hide');
-				itemsDiv.appendChild(subDiv);	
+				itemsDiv.appendChild(subDiv);
 			}	
-			// Toggle subDiv visibility
-			itemsDiv.addEventListener('click', function() {		
-				if(itemsDiv.firstChild.nextSibling.classList.contains('hide')) {
-					subDiv.removeAttribute('class');
-					subDiv.setAttribute('class', 'dropdown-content show');
-				}else{
-					subDiv.removeAttribute('class');
-					subDiv.setAttribute('class', 'dropdown-content hide');
-				}
-			});
+			// Toggle mobile navigation visibility
+			toggleDropdownContent(itemsDiv, subDiv);
+			// Add arrows to items with seconday items
+			appendArrow(itemsDiv, subDiv);
 			return subDiv;
 		}
 	}
@@ -49,7 +102,6 @@ function setItems(items) {
 	var subClick = items.items;
 	var mainNavContainer = document.getElementById('main-nav');
 
-
 	for(var i = 0; i < itemsLength; i++) {
 
 		var itemsLabel = items[i].label;
@@ -61,12 +113,8 @@ function setItems(items) {
 		var subDiv = setSubNav(itemsDiv, subItemsLength, subItems);
 
 		mainNavContainer.appendChild(itemsDiv);
-		// if(typeof(subItems) !== 'undefined') {
-		// 	if(subItemsLength > 0) {
-				
-		// 	}
-		// }	
 	}
+	setHamburgerInteraction();
 	return itemsDiv;
 }
 

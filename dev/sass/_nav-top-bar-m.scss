@@ -27,10 +27,18 @@ nav.nav-top-bar {
     padding-top: 12px;
     background: #fff;
     margin-top: 60px;
-  
+    height: 90%;
+    width: 75%;
+
   
     .top-nav-item {
       position: relative;
+
+      &:hover {       
+          color: $magenta;
+          background-color: $light-gray;
+          cursor: pointer;
+        }
 
       &>a {
         font: 21px HUGEAvantGardeBold, sans-serif;
@@ -39,11 +47,8 @@ nav.nav-top-bar {
         padding: 0 24px;
         text-decoration: none;
 
-        &:hover {       
-          padding-top: 12px;
-          padding-bottom: 12px;
-          background-color: #444;
-          cursor: pointer;
+        &:hover {
+          color: $magenta;
         }
       }
     }
@@ -63,8 +68,6 @@ nav.nav-top-bar {
 
   .dropdown-content {
     position: relative;          
-    // margin-top: 23px;
-    // padding-bottom: 12px;
     background-color: #fff;
     line-height: 0;
 
@@ -83,5 +86,24 @@ nav.nav-top-bar {
         background-color: #eee;
       }
     }
+  }
+
+  span {
+    float: right;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    transform: rotate(0deg);
+
+      .top-nav-item:active, img:active {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+         -webkit-transform:rotate(180deg);
+        -moz-transform:rotate(180deg); 
+        -o-transform:rotate(180deg);
+      }
+
   }
 }

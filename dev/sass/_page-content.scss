@@ -46,15 +46,15 @@ body {
 			color: #000;
 		}
 	}
+}
 
-	.overlay {
-		background-color: $mask;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		padding-bottom: 100%;
-		z-index: 1;
-		display: none;
-	}
+.overlay {
+	background-color: $mask;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-bottom: 100%;
+	z-index: 1;
+	display: block;
 }

@@ -56,16 +56,16 @@ body {
 			color: #000;
 		}
 	}
+}
 
-	.overlay {
-		background-color: $mask;
-		position: absolute;
-		height: 100%;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: -1;
-		display: block ;
-	}
+.overlay {
+	background-color: $mask;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	display: block ;
 }
 
