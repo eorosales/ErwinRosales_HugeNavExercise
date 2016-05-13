@@ -1,5 +1,12 @@
-function setHamburgerInteraction() {
+// Rotate chevron * 180
+function rotateArrow(arrow, subDiv) {
+	if(subDiv.classList != 'dropdown-content hide') {
+		console.log('test');
+	}
+}
+
 // Add click interaction to 'hamburger'
+function setHamburgerInteraction() {
 	var hamburger = document.getElementById('logo');
 	hamburger.setAttribute('class', 'toggle-nav-button');
 	var toggleNavButton = document.querySelector('.toggle-nav-button');
@@ -32,19 +39,6 @@ function setHamburgerInteraction() {
 	});
 }
 
-// Toggle push and pull for subDiv
-function toggleDropdownContent (itemsDiv, subDiv) {
-	itemsDiv.addEventListener('click', function() {		
-		if(itemsDiv.firstChild.nextSibling.classList.contains('hide')) {
-			subDiv.removeAttribute('class');
-			subDiv.setAttribute('class', 'dropdown-content show');
-		}else{
-			subDiv.removeAttribute('class');
-			subDiv.setAttribute('class', 'dropdown-content hide');
-		}
-	});
-}
-
 // Insert arrow for items with mobile dropown content
 function appendArrow(itemsDiv, subDiv) {
 	var span = document.createElement('span');
@@ -52,9 +46,37 @@ function appendArrow(itemsDiv, subDiv) {
 	var arrow = subDiv.parentNode;
 	img.setAttribute('src', '/images/arrow.png');
 	span.appendChild(img);
+	span.setAttribute('class', 'chevron-rotate-down');
 	
 	arrow.firstChild.appendChild(span);
+	rotateArrow(arrow, subDiv);
+
 	return arrow;
+}
+
+// Toggle push and pull for subDiv
+function toggleDropdownContent (itemsDiv, subDiv) {
+	var arrow = appendArrow(itemsDiv, subDiv); // Add arrows to items with secondary items
+	itemsDiv.addEventListener('click', function() {		
+		if(itemsDiv.firstChild.nextSibling.classList.contains('hide')) {
+			subDiv.removeAttribute('class');
+			subDiv.setAttribute('class', 'dropdown-content show');
+			
+			// Rotate chevron into initial position
+			var chevron = this.querySelector('.chevron-rotate-down');
+			chevron.removeAttribute('class');
+			chevron.setAttribute('class', 'chevron-rotate-up');
+
+		}else{
+			subDiv.removeAttribute('class');
+			subDiv.setAttribute('class', 'dropdown-content hide');
+
+			// Rotate chevron 180 degrees
+			var chevron = this.querySelector('.chevron-rotate-up');
+			chevron.removeAttribute('class');
+			chevron.setAttribute('class', 'chevron-rotate-down');
+		}
+	});
 }
 
 // Construct div container to hold secondary items
@@ -73,10 +95,8 @@ function setSubNav(itemsDiv, subItemsLength, subItems) {
 				subDiv.setAttribute('class', 'dropdown-content hide');
 				itemsDiv.appendChild(subDiv);
 			}	
-			// Toggle mobile navigation visibility
-			toggleDropdownContent(itemsDiv, subDiv);
-			// Add arrows to items with seconday items
-			appendArrow(itemsDiv, subDiv);
+			toggleDropdownContent(itemsDiv, subDiv); // Toggle mobile navigation visibility
+
 			return subDiv;
 		}
 	}

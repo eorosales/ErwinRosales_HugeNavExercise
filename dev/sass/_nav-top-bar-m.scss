@@ -93,17 +93,15 @@ nav.nav-top-bar {
     width: 48px;
     height: 48px;
     text-align: center;
-    transform: rotate(0deg);
-
-      .top-nav-item:active, img:active {
-        -webkit-transition-duration: 0.8s;
-        -moz-transition-duration: 0.8s;
-        -o-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-         -webkit-transform:rotate(180deg);
-        -moz-transform:rotate(180deg); 
-        -o-transform:rotate(180deg);
-      }
-
   }
+}
+
+.chevron-rotate-up {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.chevron-rotate-down {
+  transform: rotate(0deg);
+  transition: 0.3s;
 }
