@@ -24,18 +24,25 @@ body {
 		}
 	
 		.headline {
+			position: absolute;
 			width: 100%;
-			line-height: 0;
+			outline: 1px dashed red;
+			background-color: #eee;
 
 			h1 {
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				left: 50%;
+				color: #000;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				margin: 0;
 				font: 44px HUGEAvantGardeBold;
-			    line-height: 48px;
-			    letter-spacing: -0.02em;
-			    color: #000;
-			    display: block;
-			    display: inline-block;
-			    margin-top: 4px;
-			    position: absolute;
+				line-height: 48px;
+				letter-spacing: -0.02em;
+				text-align: center;
+				background-color: #eee;
 			    
 			    strong {
 			      display: block;

@@ -1,7 +1,7 @@
 // Add click interaction to 'hamburger'
 function setHamburgerInteraction() {
 	var hamburger = document.getElementById('logo');
-	hamburger.setAttribute('class', 'toggle-nav-button');
+	hamburger.setAttribute('class', 'toggle-nav-button toggle-open-icon');
 	var toggleNavButton = document.querySelector('.toggle-nav-button');
 	var mainNav = document.getElementById('main-nav');
 	var mask = document.querySelector('.overlay');
@@ -9,15 +9,18 @@ function setHamburgerInteraction() {
 	toggleNavButton.addEventListener('click', function() {
 		toggleNavButton.setAttribute('href', 'javascript:void(0)');		
 		var pageContent = document.querySelector('.wrapper');
+		var toggleCloseOpen = document.getElementById('logo');
 		// Push primary navigation right -->
 		if(mainNav.classList != 'primary-nav primary-nav-push-right') {
 			mainNav.removeAttribute('class');
 			mainNav.setAttribute('class','primary-nav primary-nav-push-right');
+			toggleCloseOpen.setAttribute('class', 'toggle-close-icon');
 			mask.style.opacity = '1';
 		}else{
 		// Pull primary navigation left <--
 			mainNav.removeAttribute('class');
 			mainNav.setAttribute('class', 'primary-nav primary-nav-pull-left');
+			toggleCloseOpen.setAttribute('class', 'toggle-open-icon');
 			mask.style.opacity = '0';
 		}
 		// Push page content to right -->
