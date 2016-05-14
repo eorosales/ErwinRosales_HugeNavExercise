@@ -13,6 +13,7 @@ nav.nav-top-bar {
     width: 24px;
     height: 20px; 
     margin: 20px 24px;
+    transition: 0.5s;
 
     .visible-desktop {
       display: none;
@@ -28,9 +29,14 @@ nav.nav-top-bar {
     width: 24px;
     height: 24px; 
     margin: 20px 24px;
+    transition: 0.5s;
 
     .visible-desktop {
-      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      margin: 20px 24px;
     }
   }
 

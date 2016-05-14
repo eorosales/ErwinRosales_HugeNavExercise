@@ -141,7 +141,8 @@ body {
       float: left;
       width: 24px;
       height: 20px;
-      margin: 20px 24px; }
+      margin: 20px 24px;
+      transition: 0.5s; }
       nav.nav-top-bar > a.toggle-open-icon .visible-desktop {
         display: none; }
     nav.nav-top-bar > a.toggle-close-icon {
@@ -152,9 +153,14 @@ body {
       float: right;
       width: 24px;
       height: 24px;
-      margin: 20px 24px; }
+      margin: 20px 24px;
+      transition: 0.5s; }
       nav.nav-top-bar > a.toggle-close-icon .visible-desktop {
-        display: none; }
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        margin: 20px 24px; }
     nav.nav-top-bar .primary-nav {
       display: block;
       position: absolute;

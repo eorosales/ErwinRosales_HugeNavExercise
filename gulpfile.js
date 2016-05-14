@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-var concat = require('gulp-concat');
 var sass = require('gulp-sass');
+var minify = require('gulp-minify');
 
 // Sass compiler task
 gulp.task('sass', function() {
@@ -9,16 +9,23 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('public/styles'));
 });
 
-// JS concat task
-gulp.task('scripts', function() {
-  return gulp.src(['dev/js/ajaxRequest.js', 'dev/js/createTopNav.js', 'dev/js/createSubNav.js'])
-    .pipe(concat('api.js'))
-    .pipe(gulp.dest('public/js'));
+// JS minification
+gulp.task('compress', function() {
+  gulp.src('dev/js/*.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('public/js'))
 });
 
 // Watch task
 gulp.task('default', function() {
-	// gulp.watch('dev/js/*.js', ['scripts']);
+	gulp.watch('dev/js/*.js', ['scripts']);
 	gulp.watch('dev/sass/**/*.scss', ['sass']);
 }); 
 
