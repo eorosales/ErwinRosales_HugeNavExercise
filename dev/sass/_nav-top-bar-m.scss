@@ -49,6 +49,7 @@ nav.nav-top-bar {
     margin-top: 60px;
     height: 90%;
     width: 75%;
+    overflow: visible;
 
   
     .top-nav-item {
@@ -69,8 +70,20 @@ nav.nav-top-bar {
 
         &:hover {
           color: $magenta;
+
         }
       }
+    }
+    .copyright {
+      font: 12px Helvetica, sans-serif;
+      line-height: 16px;
+      height: 48px;
+      color: #000;
+      position: absolute;
+      line-height: 48px;
+      top: 90%;
+      bottom: 0px;
+      padding: 0 24px;
     }
   }
 

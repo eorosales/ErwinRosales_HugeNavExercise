@@ -1,5 +1,5 @@
 // Mobile
-body {
+html 	{
   	background-color: #fff;
   	height: 100%;
   	width: 100%;
@@ -10,40 +10,29 @@ body {
 	height: 100%;
 
 	header {
-		background-image: url(/images/background-image.jpg);
+	 	background-image: url('/images/background-image.jpg');
 		background-size: cover;
+		background-position: center center;
 		background-repeat: no-repeat;
-		background-position: top center;
-		height: 240px;
-		text-align: center;
+	 	width: 100%;
+	 	position: relative;
+	 	width: 100%;
+	 	height: 240px;
 
-		img {
-			display: none;
-			height: 0;
-			width: 0;
-		}
-	
-		.headline {
-			position: absolute;
-			width: 100%;
-			outline: 1px dashed red;
-			background-color: #eee;
+	 	.headline {
+	 		text-align: center;
 
-			h1 {
-				position: absolute;
-				width: 100%;
-				top: 50%;
-				left: 50%;
-				color: #000;
-				-webkit-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-				margin: 0;
-				font: 44px HUGEAvantGardeBold;
-				line-height: 48px;
-				letter-spacing: -0.02em;
-				text-align: center;
-				background-color: #eee;
-			    
+		 	h1 {
+		 		display: inline-block;
+				width: 90%;
+				margin: 0 auto;
+			    top: 335px;
+			    color: #000;
+			    text-align: left;
+			    font: 44px HUGEAvantGardeBold;
+			    line-height: 48px;
+			    letter-spacing: -0.02em;
+
 			    strong {
 			      display: block;
 			    }
@@ -54,7 +43,7 @@ body {
 	main.intro {
 		padding: 0px 24px;
 		display: block;
-		margin-top: 142px;
+		margin-top: 185px;
 		
 		p {
 			font: 14px Galaxie;
@@ -78,5 +67,6 @@ body {
 	display: block ;
 	opacity: 0;
 	transition: 0.2s;
+	overflow: hidden;
 }
 

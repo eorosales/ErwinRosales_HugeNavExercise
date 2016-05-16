@@ -84,27 +84,31 @@ body {
       left: -9999px; }
   body {
     color: #fff; }
-    body h1 {
-      position: absolute;
-      width: 100%;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      margin: 0;
-      font: 120px HUGEAvantGardeBold;
-      line-height: 132px;
-      letter-spacing: -0.02em;
-      text-align: center; }
-      body h1 strong {
-        display: block; }
   .wrapper {
     height: 100%; }
     .wrapper header {
-      width: 100%; }
-      .wrapper header img {
-        max-height: 640px;
-        width: 100%; }
+      background-image: url("/images/background-image.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      position: relative;
+      width: 100%;
+      height: 640px; }
+      .wrapper header h1 {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font: 120px HUGEAvantGardeBold;
+        line-height: 132px;
+        letter-spacing: -0.02em;
+        text-align: center; }
+        .wrapper header h1 strong {
+          display: block; }
     .wrapper main.intro {
       font: 24px Galaxie, sans-serif;
       line-height: 36px;
@@ -168,7 +172,8 @@ body {
       background: #fff;
       margin-top: 60px;
       height: 90%;
-      width: 75%; }
+      width: 75%;
+      overflow: visible; }
       nav.nav-top-bar .primary-nav .top-nav-item {
         position: relative; }
         nav.nav-top-bar .primary-nav .top-nav-item:hover {
@@ -183,6 +188,16 @@ body {
           text-decoration: none; }
           nav.nav-top-bar .primary-nav .top-nav-item > a:hover {
             color: #ec008c; }
+      nav.nav-top-bar .primary-nav .copyright {
+        font: 12px Helvetica, sans-serif;
+        line-height: 16px;
+        height: 48px;
+        color: #000;
+        position: absolute;
+        line-height: 48px;
+        top: 90%;
+        bottom: 0px;
+        padding: 0 24px; }
     nav.nav-top-bar .hide {
       top: -9999px;
       left: -9999px;
@@ -217,7 +232,7 @@ body {
   .chevron-rotate-down {
     transform: rotate(0deg);
     transition: 0.3s; }
-  body {
+  html {
     background-color: #fff;
     height: 100%;
     width: 100%;
@@ -225,41 +240,32 @@ body {
   .wrapper {
     height: 100%; }
     .wrapper header {
-      background-image: url(/images/background-image.jpg);
+      background-image: url("/images/background-image.jpg");
       background-size: cover;
+      background-position: center center;
       background-repeat: no-repeat;
-      background-position: top center;
-      height: 240px;
-      text-align: center; }
-      .wrapper header img {
-        display: none;
-        height: 0;
-        width: 0; }
+      width: 100%;
+      position: relative;
+      width: 100%;
+      height: 240px; }
       .wrapper header .headline {
-        position: absolute;
-        width: 100%;
-        outline: 1px dashed red;
-        background-color: #eee; }
+        text-align: center; }
         .wrapper header .headline h1 {
-          position: absolute;
-          width: 100%;
-          top: 50%;
-          left: 50%;
+          display: inline-block;
+          width: 90%;
+          margin: 0 auto;
+          top: 335px;
           color: #000;
-          -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          margin: 0;
+          text-align: left;
           font: 44px HUGEAvantGardeBold;
           line-height: 48px;
-          letter-spacing: -0.02em;
-          text-align: center;
-          background-color: #eee; }
+          letter-spacing: -0.02em; }
           .wrapper header .headline h1 strong {
             display: block; }
     .wrapper main.intro {
       padding: 0px 24px;
       display: block;
-      margin-top: 142px; }
+      margin-top: 185px; }
       .wrapper main.intro p {
         font: 14px Galaxie;
         font-style: normal;
@@ -277,7 +283,8 @@ body {
     z-index: -1;
     display: block;
     opacity: 0;
-    transition: 0.2s; }
+    transition: 0.2s;
+    overflow: hidden; }
   .primary-nav-push-right {
     transform: translateX(0);
     transition: 0.3s; }
